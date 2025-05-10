@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		3989591F0666429B0061716B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = Mystack.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		398959200666429B0061716B = {
+			fileRef = 3989591F0666429B0061716B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//390
+//391
+//392
+//393
+//394
+//F50
+//F51
+//F52
+//F53
+//F54
+		F5E4874D044E90F301053165 = {
+			children = (
+				3989591F0666429B0061716B,
+				F5E4875A044E918201053165,
+				F5E48760044E91D101053165,
+				F5E48762044E92C501053165,
+				F5E48763044E92C501053165,
+				F5E48764044E92C501053165,
+				F5E48765044E92C501053165,
+				F5E48766044E92C501053165,
+				F5E48767044E92C501053165,
+				F5E48768044E92C501053165,
+				F5E48769044E92C501053165,
+				F5E4876A044E92C501053165,
+				F5E4876B044E92C501053165,
+				F5E4876C044E92C501053165,
+				F5E4876D044E92C501053165,
+				F5E4876E044E92C501053165,
+				F5E4876F044E92C501053165,
+				F5E48770044E92C501053165,
+				F5E48780044E92E301053165,
+				F5E48781044E92E301053165,
+				F5E48782044E92E301053165,
+				F5E48783044E92E301053165,
+				F5E48784044E92E301053165,
+				F5E4878A044E95AB01053165,
+				F5E487C8044E9DBA01053165,
+			);
+			isa = PBXGroup;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5E4874F044E90F301053165 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		F5E48750044E90F301053165 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		F5E48751044E90F301053165 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				F5E4874F044E90F301053165,
+				F5E48750044E90F301053165,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = F5E4874D044E90F301053165;
+			productRefGroup = F5E4875A044E918201053165;
+			projectDirPath = "";
+			targets = (
+				F5E48758044E918201053165,
+			);
+		};
+		F5E48754044E918201053165 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5E4875E044E919801053165,
+				F5E48772044E92C501053165,
+				F5E48774044E92C501053165,
+				F5E48776044E92C501053165,
+				F5E48779044E92C501053165,
+				F5E4877B044E92C501053165,
+				F5E4877D044E92C501053165,
+				F5E4877F044E92C501053165,
+				F5E48786044E92E301053165,
+				F5E48787044E92E301053165,
+				F5E48789044E92E301053165,
+				398959200666429B0061716B,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E48755044E918201053165 = {
+			buildActionMask = 2147483647;
+			files = (
+				F5E48761044E91D101053165,
+				F5E48771044E92C501053165,
+				F5E48773044E92C501053165,
+				F5E48775044E92C501053165,
+				F5E48777044E92C501053165,
+				F5E48778044E92C501053165,
+				F5E4877A044E92C501053165,
+				F5E4877C044E92C501053165,
+				F5E4877E044E92C501053165,
+				F5E48785044E92E301053165,
+				F5E48788044E92E301053165,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E48756044E918201053165 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E48757044E918201053165 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E48758044E918201053165 = {
+			buildPhases = (
+				F5E48754044E918201053165,
+				F5E48755044E918201053165,
+				F5E48756044E918201053165,
+				F5E48757044E918201053165,
+			);
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lexpat";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = musicxml2gmn;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = musicxml2gmn;
+			productInstallPath = /usr/local/bin;
+			productName = musicxml2gmn;
+			productReference = F5E48759044E918201053165;
+		};
+		F5E48759044E918201053165 = {
+			explicitFileType = "compiled.mach-o.executable";
+			fallbackIsa = PBXFileReference;
+			isa = PBXExecutableFileReference;
+			path = musicxml2gmn;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5E4875A044E918201053165 = {
+			children = (
+				F5E48759044E918201053165,
+				F5E4875C044E919801053165,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5E4875C044E919801053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = taglist.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4875E044E919801053165 = {
+			fileRef = F5E4875C044E919801053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48760044E91D101053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = musicxml2gmn.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48761044E91D101053165 = {
+			fileRef = F5E48760044E91D101053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48762044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = duration.cpp;
+			path = ../duration.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48763044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = duration.h;
+			path = ../duration.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48764044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgchord.cpp;
+			path = ../lgchord.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48765044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgchord.h;
+			path = ../lgchord.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48766044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgevent.cpp;
+			path = ../lgevent.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48767044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgevent.h;
+			path = ../lgevent.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48768044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgguido.cpp;
+			path = ../lgguido.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48769044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgobject.cpp;
+			path = ../lgobject.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4876A044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgobject.h;
+			path = ../lgobject.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4876B044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgsegment.cpp;
+			path = ../lgsegment.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4876C044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgsegment.h;
+			path = ../lgsegment.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4876D044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgsequence.cpp;
+			path = ../lgsequence.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4876E044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgsequence.h;
+			path = ../lgsequence.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E4876F044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgtag.cpp;
+			path = ../lgtag.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48770044E92C501053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgtag.h;
+			path = ../lgtag.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48771044E92C501053165 = {
+			fileRef = F5E48762044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48772044E92C501053165 = {
+			fileRef = F5E48763044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48773044E92C501053165 = {
+			fileRef = F5E48764044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48774044E92C501053165 = {
+			fileRef = F5E48765044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48775044E92C501053165 = {
+			fileRef = F5E48766044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48776044E92C501053165 = {
+			fileRef = F5E48767044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48777044E92C501053165 = {
+			fileRef = F5E48768044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48778044E92C501053165 = {
+			fileRef = F5E48769044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48779044E92C501053165 = {
+			fileRef = F5E4876A044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4877A044E92C501053165 = {
+			fileRef = F5E4876B044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4877B044E92C501053165 = {
+			fileRef = F5E4876C044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4877C044E92C501053165 = {
+			fileRef = F5E4876D044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4877D044E92C501053165 = {
+			fileRef = F5E4876E044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4877E044E92C501053165 = {
+			fileRef = F5E4876F044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4877F044E92C501053165 = {
+			fileRef = F5E48770044E92C501053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48780044E92E301053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = guido.cpp;
+			path = "../../parser-kit/guido.cpp";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48781044E92E301053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = guido.h;
+			path = "../../parser-kit/guido.h";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48782044E92E301053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = naguido.h;
+			path = "../../parser-kit/naguido.h";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48783044E92E301053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = strlist.c;
+			path = "../../parser-kit/strlist.c";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48784044E92E301053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = strlist.h;
+			path = "../../parser-kit/strlist.h";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E48785044E92E301053165 = {
+			fileRef = F5E48780044E92E301053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48786044E92E301053165 = {
+			fileRef = F5E48781044E92E301053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48787044E92E301053165 = {
+			fileRef = F5E48782044E92E301053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48788044E92E301053165 = {
+			fileRef = F5E48783044E92E301053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E48789044E92E301053165 = {
+			fileRef = F5E48784044E92E301053165;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5E4878A044E95AB01053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = lgmain.cpp;
+			path = ../lgmain.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5E487C8044E9DBA01053165 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = xml2guido.cpp;
+			path = "../../../../Doc/music specs/guido-xml/xml2guido/xml2guido.cpp";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+	};
+	rootObject = F5E48751044E90F301053165;
+}

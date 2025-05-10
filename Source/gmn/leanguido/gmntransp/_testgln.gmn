@@ -1,0 +1,11 @@
+%File transposed by gmntransp v1.0
+%written 2003 by Juergen Kilian as part of the GUIDO toolbox.
+%Please report problems to kilian@noteserver.org and
+%visit also the GUIDO noteserver: http://www.noteserver.org 
+
+{[
+empty*1/100 
+\noteOn:1<pitch="c2", vel=97> empty*1/2 
+\noteOff:1<pitch="c2"> 
+\noteOn:2<pitch="d3", val=80> empty*1/1 
+\noteOff:2<pitch="d3"> ]} 

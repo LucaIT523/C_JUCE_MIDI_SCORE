@@ -1,0 +1,97 @@
+\section{lg\-Factory Class Reference}
+\label{classlgFactory}\index{lgFactory@{lgFactory}}
+a factory class for {\bf lg\-Sequence}, {\bf lg\-Voice}, {\bf lg\-Note}, {\bf lg\-Event}, {\bf lg\-Chord}, {\bf lg\-Empty}, {\bf lg\-Rest}, {\bf lg\-Tag} .  
+
+
+{\tt \#include $<$lgfactory.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf lg\-Factory} (void)
+\item 
+virtual {\bf lg\-Voice} $\ast$ {\bf new\-Voice} (long int pos\-Num, long int pos\-Denom)
+\begin{CompactList}\small\item\em overwrite this function for replacing {\bf lg\-Voice} \item\end{CompactList}\item 
+virtual {\bf lg\-Sequence} $\ast$ {\bf new\-Sequence} (long int pos\-Num, long int pos\-Denom)
+\begin{CompactList}\small\item\em overwrite this function for replacing {\bf lg\-Sequence} \item\end{CompactList}\item 
+virtual {\bf lg\-Chord} $\ast$ {\bf new\-Chord} (long int pos\-Num, long int pos\-Denom)
+\begin{CompactList}\small\item\em overwrite this for replacing {\bf lg\-Chord} \item\end{CompactList}\item 
+virtual {\bf lg\-Note} $\ast$ {\bf new\-Note} (int pc, int oct, int acc, long int dur\-N, long int dur\-D, int dots, long int dur\-Pos\-N, long int dur\-Pos\-D)
+\begin{CompactList}\small\item\em overwrite this function for replacing {\bf lg\-Note} \item\end{CompactList}\item 
+virtual {\bf lg\-Empty} $\ast$ {\bf new\-Empty} (long int dur\-N, long int dur\-D, int dots, long int dur\-Pos\-N, long int dur\-Pos\-D)
+\begin{CompactList}\small\item\em overwrite this function for replacing {\bf lg\-Empty} \item\end{CompactList}\item 
+virtual {\bf lg\-Rest} $\ast$ {\bf new\-Rest} (long int dur\-N, long int dur\-D, int dots, long int dur\-Pos\-N, long int dur\-Pos\-D)
+\begin{CompactList}\small\item\em overwrite this function for replacing {\bf lg\-Rest} \item\end{CompactList}\item 
+virtual {\bf lg\-Tag} $\ast$ {\bf new\-Tag} (long int {\bf tagno}, {\bf lg\-Event} $\ast$p\-Ev, const char $\ast$tag\-Name)
+\begin{CompactList}\small\item\em overwrite this function for replacing {\bf lg\-Tag} \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+a factory class for {\bf lg\-Sequence}, {\bf lg\-Voice}, {\bf lg\-Note}, {\bf lg\-Event}, {\bf lg\-Chord}, {\bf lg\-Empty}, {\bf lg\-Rest}, {\bf lg\-Tag} . 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{lgFactory@{lg\-Factory}!lgFactory@{lgFactory}}
+\index{lgFactory@{lgFactory}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}lg\-Factory::lg\-Factory (void)\hspace{0.3cm}{\tt  [inline]}}\label{classlgFactory_a0}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{lgFactory@{lg\-Factory}!newChord@{newChord}}
+\index{newChord@{newChord}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Chord} $\ast$ lg\-Factory::new\-Chord (long int {\em pos\-Num}, long int {\em pos\-Denom})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a3}
+
+
+overwrite this for replacing {\bf lg\-Chord} 
+
+\index{lgFactory@{lg\-Factory}!newEmpty@{newEmpty}}
+\index{newEmpty@{newEmpty}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Empty} $\ast$ lg\-Factory::new\-Empty (long int {\em dur\-N}, long int {\em dur\-D}, int {\em dots}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a5}
+
+
+overwrite this function for replacing {\bf lg\-Empty} 
+
+\index{lgFactory@{lg\-Factory}!newNote@{newNote}}
+\index{newNote@{newNote}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Note} $\ast$ lg\-Factory::new\-Note (int {\em pc}, int {\em oct}, int {\em acc}, long int {\em dur\-N}, long int {\em dur\-D}, int {\em dots}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a4}
+
+
+overwrite this function for replacing {\bf lg\-Note} 
+
+\index{lgFactory@{lg\-Factory}!newRest@{newRest}}
+\index{newRest@{newRest}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Rest} $\ast$ lg\-Factory::new\-Rest (long int {\em dur\-N}, long int {\em dur\-D}, int {\em dots}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a6}
+
+
+overwrite this function for replacing {\bf lg\-Rest} 
+
+\index{lgFactory@{lg\-Factory}!newSequence@{newSequence}}
+\index{newSequence@{newSequence}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Sequence} $\ast$ lg\-Factory::new\-Sequence (long int {\em pos\-Num}, long int {\em pos\-Denom})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a2}
+
+
+overwrite this function for replacing {\bf lg\-Sequence} 
+
+\index{lgFactory@{lg\-Factory}!newTag@{newTag}}
+\index{newTag@{newTag}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Tag} $\ast$ lg\-Factory::new\-Tag (long int {\em tagno}, {\bf lg\-Event} $\ast$ {\em p\-Ev}, const char $\ast$ {\em tag\-Name})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a7}
+
+
+overwrite this function for replacing {\bf lg\-Tag} 
+
+\index{lgFactory@{lg\-Factory}!newVoice@{newVoice}}
+\index{newVoice@{newVoice}!lgFactory@{lg\-Factory}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Voice} $\ast$ lg\-Factory::new\-Voice (long int {\em pos\-Num}, long int {\em pos\-Denom})\hspace{0.3cm}{\tt  [virtual]}}\label{classlgFactory_a1}
+
+
+overwrite this function for replacing {\bf lg\-Voice} 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf lgfactory.h}\item 
+{\bf lgfactory.cpp}\end{CompactItemize}

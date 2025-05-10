@@ -1,0 +1,27 @@
+% Parsed by MusicXML-to-GUIDO Parser 1.0 
+
+{[
+\key<"C"> 
+\meter<"4/4"> 
+\clef<"g2"> 
+g1*1/4 
+\grace( a1*1/8 ) c2*1/4 
+\grace( f1*1/8 ) b1*1/4 
+\grace( d2*1/8 e2*1/8 ) b1*1/4 
+\bar<1> a1*1/4 
+\grace( c2*1/8 
+a1*1/8 a1*1/8 ) c2*1/4 
+\grace( b1*1/8 ) b1*1/4 c2*1/4 
+\bar<2> b1*1/4 
+\grace( a1*1/8 g1*1/8 ) {
+a1*1/4 , 
+a1*1/4 }  
+\grace( 
+b1*1/8 ) {
+a1*1/4 , 
+a1*1/4 }  {
+a1*1/4 , 
+b1*1/4 
+\bar<3> }  _*1/1 
+\bar<4> _*1/1 
+\bar<5> ]} 

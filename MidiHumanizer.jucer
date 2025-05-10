@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="L4zPYM" name="MidiHumanizer" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="NUYSrc" name="MidiHumanizer">
+    <GROUP id="{B20EEF40-9674-C9B4-E7BB-CA5D6517712C}" name="Source">
+      <FILE id="VR6lIX" name="AppData.cpp" compile="1" resource="0" file="Source/AppData.cpp"/>
+      <FILE id="j1rYr1" name="AppData.h" compile="0" resource="0" file="Source/AppData.h"/>
+      <FILE id="FZwKbE" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="A7MVhB" name="MainController.cpp" compile="1" resource="0"
+            file="Source/MainController.cpp"/>
+      <FILE id="REb3wA" name="MainController.h" compile="0" resource="0"
+            file="Source/MainController.h"/>
+      <FILE id="ozgWBE" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+      <FILE id="Pn10rL" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+    </GROUP>
+    <FILE id="mJuL8R" name="MidiHumanizer.jucer" compile="0" resource="1"
+          file="MidiHumanizer.jucer"/>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MidiHumanizer"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MidiHumanizer"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_core" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_events" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_graphics" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_opengl" path="../MidiHumanizer-master/JuceLibraryCode/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

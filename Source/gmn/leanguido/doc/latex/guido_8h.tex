@@ -1,0 +1,794 @@
+\section{guido.h File Reference}
+\label{guido_8h}\index{guido.h@{guido.h}}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf DEBUG}(x)
+\item 
+\#define {\bf STANDARD}
+\item 
+\#define {\bf T\_\-REAL}\ double
+\item 
+\#define {\bf const}\ const
+\item 
+\#define {\bf PARSE}(f)\ parse(f)
+\item 
+\#define {\bf CINC}\ \{ if (yyleng $>$ 1) {\bf cnr}+=yyleng; else {\bf cnr}++; \}
+\item 
+\#define {\bf LINC}\ \{ {\bf lnr}++; {\bf cnr}=0; \}
+\item 
+\#define {\bf ERROR}(s)\ gd\_\-error(s);
+\item 
+\#define {\bf PARSE\_\-MODE\_\-ALL}\ 0
+\item 
+\#define {\bf PARSE\_\-MODE\_\-PHASE\_\-1\_\-1}\ 11
+\item 
+\#define {\bf PARSE\_\-MODE\_\-PHASE\_\-1\_\-3}\ 13
+\item 
+\#define {\bf PARSE\_\-MODE\_\-PHASE\_\-2}\ 2
+\item 
+\#define {\bf NOTE\_\-C}\ 0
+\item 
+\#define {\bf NOTE\_\-CIS}\ 1
+\item 
+\#define {\bf NOTE\_\-D}\ 2
+\item 
+\#define {\bf NOTE\_\-DIS}\ 3
+\item 
+\#define {\bf NOTE\_\-E}\ 4
+\item 
+\#define {\bf NOTE\_\-F}\ 5
+\item 
+\#define {\bf NOTE\_\-FIS}\ 6
+\item 
+\#define {\bf NOTE\_\-G}\ 7
+\item 
+\#define {\bf NOTE\_\-GIS}\ 8
+\item 
+\#define {\bf NOTE\_\-A}\ 9
+\item 
+\#define {\bf NOTE\_\-AIS}\ 10
+\item 
+\#define {\bf NOTE\_\-H}\ 11
+\item 
+\#define {\bf REST}\ -1
+\item 
+\#define {\bf EMPTY}\ -2
+\item 
+\#define {\bf SHARP}\ +1
+\item 
+\#define {\bf FLAT}\ -1
+\item 
+\#define {\bf GD\_\-INIT\_\-SEGM}\ gd\_\-segm\-Init();
+\item 
+\#define {\bf GD\_\-EXIT\_\-SEGM}\ gd\_\-segm\-Exit();
+\item 
+\#define {\bf GD\_\-APP\_\-SEQ}\ gd\_\-segm\-Append\-Seq();
+\item 
+\#define {\bf GD\_\-INIT\_\-SEQ}\ gd\_\-seq\-Init();
+\item 
+\#define {\bf GD\_\-EXIT\_\-SEQ}\ gd\_\-seq\-Exit();
+\item 
+\#define {\bf GD\_\-NT}(x)\ gd\_\-note\-Init(x);
+\item 
+\#define {\bf GD\_\-SH\_\-NT}\ gd\_\-note\-Acc(SHARP);
+\item 
+\#define {\bf GD\_\-FL\_\-NT}\ gd\_\-note\-Acc(FLAT);
+\item 
+\#define {\bf GD\_\-OCT\_\-NT}(x)\ gd\_\-note\-Oct(x);
+\item 
+\#define {\bf GD\_\-ENUM\_\-NT}(x)\ gd\_\-note\-Enum(x);
+\item 
+\#define {\bf GD\_\-DENOM\_\-NT}(x)\ gd\_\-note\-Denom(x);
+\item 
+\#define {\bf GD\_\-DOT\_\-NT}\ gd\_\-note\-Dot();
+\item 
+\#define {\bf GD\_\-DDOT\_\-NT}\ gd\_\-note\-Ddot();
+\item 
+\#define {\bf GD\_\-ABSDUR\_\-NT}(x)\ gd\_\-note\-Abs\-Dur(x);
+\item 
+\#define {\bf GD\_\-APP\_\-NT}\ gd\_\-seq\-Append\-Note();
+\item 
+\#define {\bf GD\_\-INIT\_\-CH}\ gd\_\-chord\-Init();
+\item 
+\#define {\bf GD\_\-CH\_\-INIT\_\-VOICE}\ gd\_\-chord\-Init\-Note();
+\item 
+\#define {\bf GD\_\-CH\_\-APP\_\-NT}\ gd\_\-chord\-Append\-Note();
+\item 
+\#define {\bf GD\_\-APP\_\-CH}\ gd\_\-seq\-Append\-Chord();
+\item 
+\#define {\bf GD\_\-TAG\_\-START}(x, i)\ gd\_\-tag\-Start(x,i);
+\item 
+\#define {\bf GD\_\-TAG\_\-END}\ gd\_\-tag\-End();
+\item 
+\#define {\bf GD\_\-TAG\_\-NARG}(x)\ gd\_\-tag\-Int\-Arg(x);
+\item 
+\#define {\bf GD\_\-TAG\_\-RARG}(x)\ gd\_\-tag\-Float\-Arg(x);
+\item 
+\#define {\bf GD\_\-TAG\_\-SARG}(x)\ gd\_\-tag\-Str\-Arg(x);
+\item 
+\#define {\bf GD\_\-TAG\_\-TARG}(x)
+\item 
+\#define {\bf GD\_\-TAG\_\-ADD\_\-ARG}(x)\ gd\_\-tag\-Add\-Arg(x);
+\item 
+\#define {\bf GD\_\-TAG\_\-ADD}\ gd\_\-tag\-Add();
+\item 
+\#define {\bf GD\_\-TAG\_\-ARG\_\-UNIT}(x)\ gd\_\-tag\-Arg\-Unit(x);
+\item 
+\#define {\bf GD\_\-TAG\_\-RANGE}\ gd\_\-tag\-Range();
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void {\bf gd\_\-init} (void)
+\item 
+void {\bf gd\_\-exit} (void)
+\item 
+int {\bf gd\_\-error} (const char $\ast$msg)
+\item 
+int {\bf gd\_\-parse} (const char $\ast$filename, int mode)
+\item 
+void {\bf gd\_\-frac\-Norm} (long int $\ast$a, long int $\ast$b)
+\item 
+void {\bf gd\_\-frac\-Add} (long int $\ast$a, long int $\ast$b, const long int c, const long int d)
+\item 
+int {\bf gd\_\-frac\-Cmp} (long int a, long int b, long int c, long int d)
+\item 
+long int {\bf gd\_\-tag\-Stack\-Pop} (void)
+\item 
+void {\bf gd\_\-tag\-Stack\-Clear} (void)
+\item 
+void {\bf gd\_\-tag\-Stack\-Push} (long int {\bf tagno})
+\item 
+int {\bf gd\_\-note\-Name2pc} (char $\ast$name)
+\item 
+void {\bf gd\_\-note\-Init} (char $\ast$id)
+\item 
+void {\bf gd\_\-note\-Acc} (int n)
+\item 
+void {\bf gd\_\-note\-Oct} (int n)
+\item 
+void {\bf gd\_\-note\-Enum} (long int n)
+\item 
+void {\bf gd\_\-note\-Denom} (long int n)
+\item 
+void {\bf gd\_\-note\-Dot} (void)
+\item 
+void {\bf gd\_\-note\-Ddot} (void)
+\item 
+void {\bf gd\_\-note\-Abs\-Dur} (long int n)
+\item 
+void {\bf gd\_\-seq\-Append\-Note} (void)
+\item 
+void {\bf gd\_\-chord\-Init} (void)
+\item 
+void {\bf gd\_\-chord\-Init\-Note} (void)
+\item 
+void {\bf gd\_\-chord\-Append\-Note} (void)
+\item 
+void {\bf gd\_\-seq\-Append\-Chord} (void)
+\item 
+void {\bf gd\_\-seq\-Init} (void)
+\item 
+void {\bf gd\_\-seq\-Exit} (void)
+\item 
+void {\bf gd\_\-segm\-Init} (void)
+\item 
+void {\bf gd\_\-segm\-Exit} (void)
+\item 
+void {\bf gd\_\-segm\-Append\-Seq} (void)
+\item 
+void {\bf gd\_\-tag\-Start} (char $\ast$id, long int no)
+\item 
+void {\bf gd\_\-tag\-Int\-Arg} (long int n)
+\item 
+void {\bf gd\_\-tag\-Float\-Arg} (T\_\-REAL r)
+\item 
+void {\bf gd\_\-tag\-Arg\-Unit} (char $\ast$unit)
+\item 
+void {\bf gd\_\-tag\-Str\-Arg} (char $\ast$s)
+\item 
+void {\bf gd\_\-tag\-Add} (void)
+\item 
+void {\bf gd\_\-tag\-Add\-Arg} (char $\ast$s)
+\item 
+void {\bf gd\_\-tag\-End} (void)
+\item 
+char {\bf gd\_\-get\-Tag\-Arg\-Type} (int n)
+\item 
+char $\ast$ {\bf gd\_\-get\-Tag\-Arg\-Name} (int n)
+\item 
+long int {\bf gd\_\-get\-Tag\-Arg\-Int} (int n)
+\item 
+T\_\-REAL {\bf gd\_\-get\-Tag\-Arg\-Float} (int n)
+\item 
+char $\ast$ {\bf gd\_\-get\-Tag\-Arg\-Unit} (int n)
+\item 
+char $\ast$ {\bf gd\_\-get\-Tag\-Arg\-Str} (int n)
+\item 
+void {\bf gd\_\-tag\-Range} ()
+\item 
+void {\bf gd\_\-dur\-Incr\-On} (void)
+\item 
+void {\bf gd\_\-dur\-Incr\-Off} (void)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+int {\bf parse\_\-mode}
+\item 
+long int {\bf lnr}
+\item 
+long int {\bf cnr}
+\item 
+long int {\bf cmnt\_\-level}
+\item 
+long int {\bf tagno}
+\item 
+long int {\bf rtp\_\-en}
+\item 
+long int {\bf rtp\_\-dn}
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{guido.h@{guido.h}!CINC@{CINC}}
+\index{CINC@{CINC}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define CINC\ \{ if (yyleng $>$ 1) {\bf cnr}+=yyleng; else {\bf cnr}++; \}}\label{guido_8h_a5}
+
+
+\index{guido.h@{guido.h}!const@{const}}
+\index{const@{const}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define const\ const}\label{guido_8h_a3}
+
+
+\index{guido.h@{guido.h}!DEBUG@{DEBUG}}
+\index{DEBUG@{DEBUG}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define DEBUG(x)}\label{guido_8h_a0}
+
+
+\index{guido.h@{guido.h}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EMPTY\ -2}\label{guido_8h_a25}
+
+
+\index{guido.h@{guido.h}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define ERROR(s)\ gd\_\-error(s);}\label{guido_8h_a7}
+
+
+\index{guido.h@{guido.h}!FLAT@{FLAT}}
+\index{FLAT@{FLAT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define FLAT\ -1}\label{guido_8h_a27}
+
+
+\index{guido.h@{guido.h}!GD_ABSDUR_NT@{GD\_\-ABSDUR\_\-NT}}
+\index{GD_ABSDUR_NT@{GD\_\-ABSDUR\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-ABSDUR\_\-NT(x)\ gd\_\-note\-Abs\-Dur(x);}\label{guido_8h_a41}
+
+
+\index{guido.h@{guido.h}!GD_APP_CH@{GD\_\-APP\_\-CH}}
+\index{GD_APP_CH@{GD\_\-APP\_\-CH}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-APP\_\-CH\ gd\_\-seq\-Append\-Chord();}\label{guido_8h_a46}
+
+
+\index{guido.h@{guido.h}!GD_APP_NT@{GD\_\-APP\_\-NT}}
+\index{GD_APP_NT@{GD\_\-APP\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-APP\_\-NT\ gd\_\-seq\-Append\-Note();}\label{guido_8h_a42}
+
+
+\index{guido.h@{guido.h}!GD_APP_SEQ@{GD\_\-APP\_\-SEQ}}
+\index{GD_APP_SEQ@{GD\_\-APP\_\-SEQ}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-APP\_\-SEQ\ gd\_\-segm\-Append\-Seq();}\label{guido_8h_a30}
+
+
+\index{guido.h@{guido.h}!GD_CH_APP_NT@{GD\_\-CH\_\-APP\_\-NT}}
+\index{GD_CH_APP_NT@{GD\_\-CH\_\-APP\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-CH\_\-APP\_\-NT\ gd\_\-chord\-Append\-Note();}\label{guido_8h_a45}
+
+
+\index{guido.h@{guido.h}!GD_CH_INIT_VOICE@{GD\_\-CH\_\-INIT\_\-VOICE}}
+\index{GD_CH_INIT_VOICE@{GD\_\-CH\_\-INIT\_\-VOICE}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-CH\_\-INIT\_\-VOICE\ gd\_\-chord\-Init\-Note();}\label{guido_8h_a44}
+
+
+\index{guido.h@{guido.h}!GD_DDOT_NT@{GD\_\-DDOT\_\-NT}}
+\index{GD_DDOT_NT@{GD\_\-DDOT\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-DDOT\_\-NT\ gd\_\-note\-Ddot();}\label{guido_8h_a40}
+
+
+\index{guido.h@{guido.h}!GD_DENOM_NT@{GD\_\-DENOM\_\-NT}}
+\index{GD_DENOM_NT@{GD\_\-DENOM\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-DENOM\_\-NT(x)\ gd\_\-note\-Denom(x);}\label{guido_8h_a38}
+
+
+\index{guido.h@{guido.h}!GD_DOT_NT@{GD\_\-DOT\_\-NT}}
+\index{GD_DOT_NT@{GD\_\-DOT\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-DOT\_\-NT\ gd\_\-note\-Dot();}\label{guido_8h_a39}
+
+
+\index{guido.h@{guido.h}!GD_ENUM_NT@{GD\_\-ENUM\_\-NT}}
+\index{GD_ENUM_NT@{GD\_\-ENUM\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-ENUM\_\-NT(x)\ gd\_\-note\-Enum(x);}\label{guido_8h_a37}
+
+
+\index{guido.h@{guido.h}!GD_EXIT_SEGM@{GD\_\-EXIT\_\-SEGM}}
+\index{GD_EXIT_SEGM@{GD\_\-EXIT\_\-SEGM}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-EXIT\_\-SEGM\ gd\_\-segm\-Exit();}\label{guido_8h_a29}
+
+
+\index{guido.h@{guido.h}!GD_EXIT_SEQ@{GD\_\-EXIT\_\-SEQ}}
+\index{GD_EXIT_SEQ@{GD\_\-EXIT\_\-SEQ}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-EXIT\_\-SEQ\ gd\_\-seq\-Exit();}\label{guido_8h_a32}
+
+
+\index{guido.h@{guido.h}!GD_FL_NT@{GD\_\-FL\_\-NT}}
+\index{GD_FL_NT@{GD\_\-FL\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-FL\_\-NT\ gd\_\-note\-Acc(FLAT);}\label{guido_8h_a35}
+
+
+\index{guido.h@{guido.h}!GD_INIT_CH@{GD\_\-INIT\_\-CH}}
+\index{GD_INIT_CH@{GD\_\-INIT\_\-CH}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-INIT\_\-CH\ gd\_\-chord\-Init();}\label{guido_8h_a43}
+
+
+\index{guido.h@{guido.h}!GD_INIT_SEGM@{GD\_\-INIT\_\-SEGM}}
+\index{GD_INIT_SEGM@{GD\_\-INIT\_\-SEGM}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-INIT\_\-SEGM\ gd\_\-segm\-Init();}\label{guido_8h_a28}
+
+
+\index{guido.h@{guido.h}!GD_INIT_SEQ@{GD\_\-INIT\_\-SEQ}}
+\index{GD_INIT_SEQ@{GD\_\-INIT\_\-SEQ}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-INIT\_\-SEQ\ gd\_\-seq\-Init();}\label{guido_8h_a31}
+
+
+\index{guido.h@{guido.h}!GD_NT@{GD\_\-NT}}
+\index{GD_NT@{GD\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-NT(x)\ gd\_\-note\-Init(x);}\label{guido_8h_a33}
+
+
+\index{guido.h@{guido.h}!GD_OCT_NT@{GD\_\-OCT\_\-NT}}
+\index{GD_OCT_NT@{GD\_\-OCT\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-OCT\_\-NT(x)\ gd\_\-note\-Oct(x);}\label{guido_8h_a36}
+
+
+\index{guido.h@{guido.h}!GD_SH_NT@{GD\_\-SH\_\-NT}}
+\index{GD_SH_NT@{GD\_\-SH\_\-NT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-SH\_\-NT\ gd\_\-note\-Acc(SHARP);}\label{guido_8h_a34}
+
+
+\index{guido.h@{guido.h}!GD_TAG_ADD@{GD\_\-TAG\_\-ADD}}
+\index{GD_TAG_ADD@{GD\_\-TAG\_\-ADD}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-ADD\ gd\_\-tag\-Add();}\label{guido_8h_a54}
+
+
+\index{guido.h@{guido.h}!GD_TAG_ADD_ARG@{GD\_\-TAG\_\-ADD\_\-ARG}}
+\index{GD_TAG_ADD_ARG@{GD\_\-TAG\_\-ADD\_\-ARG}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-ADD\_\-ARG(x)\ gd\_\-tag\-Add\-Arg(x);}\label{guido_8h_a53}
+
+
+\index{guido.h@{guido.h}!GD_TAG_ARG_UNIT@{GD\_\-TAG\_\-ARG\_\-UNIT}}
+\index{GD_TAG_ARG_UNIT@{GD\_\-TAG\_\-ARG\_\-UNIT}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-ARG\_\-UNIT(x)\ gd\_\-tag\-Arg\-Unit(x);}\label{guido_8h_a55}
+
+
+\index{guido.h@{guido.h}!GD_TAG_END@{GD\_\-TAG\_\-END}}
+\index{GD_TAG_END@{GD\_\-TAG\_\-END}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-END\ gd\_\-tag\-End();}\label{guido_8h_a48}
+
+
+\index{guido.h@{guido.h}!GD_TAG_NARG@{GD\_\-TAG\_\-NARG}}
+\index{GD_TAG_NARG@{GD\_\-TAG\_\-NARG}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-NARG(x)\ gd\_\-tag\-Int\-Arg(x);}\label{guido_8h_a49}
+
+
+\index{guido.h@{guido.h}!GD_TAG_RANGE@{GD\_\-TAG\_\-RANGE}}
+\index{GD_TAG_RANGE@{GD\_\-TAG\_\-RANGE}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-RANGE\ gd\_\-tag\-Range();}\label{guido_8h_a56}
+
+
+\index{guido.h@{guido.h}!GD_TAG_RARG@{GD\_\-TAG\_\-RARG}}
+\index{GD_TAG_RARG@{GD\_\-TAG\_\-RARG}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-RARG(x)\ gd\_\-tag\-Float\-Arg(x);}\label{guido_8h_a50}
+
+
+\index{guido.h@{guido.h}!GD_TAG_SARG@{GD\_\-TAG\_\-SARG}}
+\index{GD_TAG_SARG@{GD\_\-TAG\_\-SARG}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-SARG(x)\ gd\_\-tag\-Str\-Arg(x);}\label{guido_8h_a51}
+
+
+\index{guido.h@{guido.h}!GD_TAG_START@{GD\_\-TAG\_\-START}}
+\index{GD_TAG_START@{GD\_\-TAG\_\-START}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-START(x, i)\ gd\_\-tag\-Start(x,i);}\label{guido_8h_a47}
+
+
+\index{guido.h@{guido.h}!GD_TAG_TARG@{GD\_\-TAG\_\-TARG}}
+\index{GD_TAG_TARG@{GD\_\-TAG\_\-TARG}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GD\_\-TAG\_\-TARG(x)}\label{guido_8h_a52}
+
+
+\index{guido.h@{guido.h}!LINC@{LINC}}
+\index{LINC@{LINC}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define LINC\ \{ {\bf lnr}++; {\bf cnr}=0; \}}\label{guido_8h_a6}
+
+
+\index{guido.h@{guido.h}!NOTE_A@{NOTE\_\-A}}
+\index{NOTE_A@{NOTE\_\-A}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-A\ 9}\label{guido_8h_a21}
+
+
+\index{guido.h@{guido.h}!NOTE_AIS@{NOTE\_\-AIS}}
+\index{NOTE_AIS@{NOTE\_\-AIS}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-AIS\ 10}\label{guido_8h_a22}
+
+
+\index{guido.h@{guido.h}!NOTE_C@{NOTE\_\-C}}
+\index{NOTE_C@{NOTE\_\-C}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-C\ 0}\label{guido_8h_a12}
+
+
+\index{guido.h@{guido.h}!NOTE_CIS@{NOTE\_\-CIS}}
+\index{NOTE_CIS@{NOTE\_\-CIS}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-CIS\ 1}\label{guido_8h_a13}
+
+
+\index{guido.h@{guido.h}!NOTE_D@{NOTE\_\-D}}
+\index{NOTE_D@{NOTE\_\-D}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-D\ 2}\label{guido_8h_a14}
+
+
+\index{guido.h@{guido.h}!NOTE_DIS@{NOTE\_\-DIS}}
+\index{NOTE_DIS@{NOTE\_\-DIS}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-DIS\ 3}\label{guido_8h_a15}
+
+
+\index{guido.h@{guido.h}!NOTE_E@{NOTE\_\-E}}
+\index{NOTE_E@{NOTE\_\-E}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-E\ 4}\label{guido_8h_a16}
+
+
+\index{guido.h@{guido.h}!NOTE_F@{NOTE\_\-F}}
+\index{NOTE_F@{NOTE\_\-F}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-F\ 5}\label{guido_8h_a17}
+
+
+\index{guido.h@{guido.h}!NOTE_FIS@{NOTE\_\-FIS}}
+\index{NOTE_FIS@{NOTE\_\-FIS}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-FIS\ 6}\label{guido_8h_a18}
+
+
+\index{guido.h@{guido.h}!NOTE_G@{NOTE\_\-G}}
+\index{NOTE_G@{NOTE\_\-G}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-G\ 7}\label{guido_8h_a19}
+
+
+\index{guido.h@{guido.h}!NOTE_GIS@{NOTE\_\-GIS}}
+\index{NOTE_GIS@{NOTE\_\-GIS}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-GIS\ 8}\label{guido_8h_a20}
+
+
+\index{guido.h@{guido.h}!NOTE_H@{NOTE\_\-H}}
+\index{NOTE_H@{NOTE\_\-H}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NOTE\_\-H\ 11}\label{guido_8h_a23}
+
+
+\index{guido.h@{guido.h}!PARSE@{PARSE}}
+\index{PARSE@{PARSE}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define PARSE(f)\ parse(f)}\label{guido_8h_a4}
+
+
+\index{guido.h@{guido.h}!PARSE_MODE_ALL@{PARSE\_\-MODE\_\-ALL}}
+\index{PARSE_MODE_ALL@{PARSE\_\-MODE\_\-ALL}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define PARSE\_\-MODE\_\-ALL\ 0}\label{guido_8h_a8}
+
+
+\index{guido.h@{guido.h}!PARSE_MODE_PHASE_1_1@{PARSE\_\-MODE\_\-PHASE\_\-1\_\-1}}
+\index{PARSE_MODE_PHASE_1_1@{PARSE\_\-MODE\_\-PHASE\_\-1\_\-1}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define PARSE\_\-MODE\_\-PHASE\_\-1\_\-1\ 11}\label{guido_8h_a9}
+
+
+\index{guido.h@{guido.h}!PARSE_MODE_PHASE_1_3@{PARSE\_\-MODE\_\-PHASE\_\-1\_\-3}}
+\index{PARSE_MODE_PHASE_1_3@{PARSE\_\-MODE\_\-PHASE\_\-1\_\-3}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define PARSE\_\-MODE\_\-PHASE\_\-1\_\-3\ 13}\label{guido_8h_a10}
+
+
+\index{guido.h@{guido.h}!PARSE_MODE_PHASE_2@{PARSE\_\-MODE\_\-PHASE\_\-2}}
+\index{PARSE_MODE_PHASE_2@{PARSE\_\-MODE\_\-PHASE\_\-2}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define PARSE\_\-MODE\_\-PHASE\_\-2\ 2}\label{guido_8h_a11}
+
+
+\index{guido.h@{guido.h}!REST@{REST}}
+\index{REST@{REST}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define REST\ -1}\label{guido_8h_a24}
+
+
+\index{guido.h@{guido.h}!SHARP@{SHARP}}
+\index{SHARP@{SHARP}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define SHARP\ +1}\label{guido_8h_a26}
+
+
+\index{guido.h@{guido.h}!STANDARD@{STANDARD}}
+\index{STANDARD@{STANDARD}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define STANDARD}\label{guido_8h_a1}
+
+
+\index{guido.h@{guido.h}!T_REAL@{T\_\-REAL}}
+\index{T_REAL@{T\_\-REAL}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define T\_\-REAL\ double}\label{guido_8h_a2}
+
+
+
+
+\subsection{Function Documentation}
+\index{guido.h@{guido.h}!gd_chordAppendNote@{gd\_\-chordAppendNote}}
+\index{gd_chordAppendNote@{gd\_\-chordAppendNote}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-chord\-Append\-Note (void)}\label{guido_8h_a86}
+
+
+\index{guido.h@{guido.h}!gd_chordInit@{gd\_\-chordInit}}
+\index{gd_chordInit@{gd\_\-chordInit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-chord\-Init (void)}\label{guido_8h_a84}
+
+
+\index{guido.h@{guido.h}!gd_chordInitNote@{gd\_\-chordInitNote}}
+\index{gd_chordInitNote@{gd\_\-chordInitNote}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-chord\-Init\-Note (void)}\label{guido_8h_a85}
+
+
+\index{guido.h@{guido.h}!gd_durIncrOff@{gd\_\-durIncrOff}}
+\index{gd_durIncrOff@{gd\_\-durIncrOff}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-dur\-Incr\-Off (void)}\label{guido_8h_a109}
+
+
+\index{guido.h@{guido.h}!gd_durIncrOn@{gd\_\-durIncrOn}}
+\index{gd_durIncrOn@{gd\_\-durIncrOn}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-dur\-Incr\-On (void)}\label{guido_8h_a108}
+
+
+\index{guido.h@{guido.h}!gd_error@{gd\_\-error}}
+\index{gd_error@{gd\_\-error}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int gd\_\-error (const char $\ast$ {\em msg})}\label{guido_8h_a66}
+
+
+\index{guido.h@{guido.h}!gd_exit@{gd\_\-exit}}
+\index{gd_exit@{gd\_\-exit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-exit (void)}\label{guido_8h_a65}
+
+
+\index{guido.h@{guido.h}!gd_fracAdd@{gd\_\-fracAdd}}
+\index{gd_fracAdd@{gd\_\-fracAdd}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-frac\-Add (long int $\ast$ {\em a}, long int $\ast$ {\em b}, const long int {\em c}, const long int {\em d})}\label{guido_8h_a69}
+
+
+\index{guido.h@{guido.h}!gd_fracCmp@{gd\_\-fracCmp}}
+\index{gd_fracCmp@{gd\_\-fracCmp}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int gd\_\-frac\-Cmp (long int {\em a}, long int {\em b}, long int {\em c}, long int {\em d})}\label{guido_8h_a70}
+
+
+\index{guido.h@{guido.h}!gd_fracNorm@{gd\_\-fracNorm}}
+\index{gd_fracNorm@{gd\_\-fracNorm}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-frac\-Norm (long int $\ast$ {\em a}, long int $\ast$ {\em b})}\label{guido_8h_a68}
+
+
+\index{guido.h@{guido.h}!gd_getTagArgFloat@{gd\_\-getTagArgFloat}}
+\index{gd_getTagArgFloat@{gd\_\-getTagArgFloat}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}T\_\-REAL gd\_\-get\-Tag\-Arg\-Float (int {\em n})}\label{guido_8h_a104}
+
+
+\index{guido.h@{guido.h}!gd_getTagArgInt@{gd\_\-getTagArgInt}}
+\index{gd_getTagArgInt@{gd\_\-getTagArgInt}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int gd\_\-get\-Tag\-Arg\-Int (int {\em n})}\label{guido_8h_a103}
+
+
+\index{guido.h@{guido.h}!gd_getTagArgName@{gd\_\-getTagArgName}}
+\index{gd_getTagArgName@{gd\_\-getTagArgName}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ gd\_\-get\-Tag\-Arg\-Name (int {\em n})}\label{guido_8h_a102}
+
+
+\index{guido.h@{guido.h}!gd_getTagArgStr@{gd\_\-getTagArgStr}}
+\index{gd_getTagArgStr@{gd\_\-getTagArgStr}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ gd\_\-get\-Tag\-Arg\-Str (int {\em n})}\label{guido_8h_a106}
+
+
+\index{guido.h@{guido.h}!gd_getTagArgType@{gd\_\-getTagArgType}}
+\index{gd_getTagArgType@{gd\_\-getTagArgType}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char gd\_\-get\-Tag\-Arg\-Type (int {\em n})}\label{guido_8h_a101}
+
+
+\index{guido.h@{guido.h}!gd_getTagArgUnit@{gd\_\-getTagArgUnit}}
+\index{gd_getTagArgUnit@{gd\_\-getTagArgUnit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ gd\_\-get\-Tag\-Arg\-Unit (int {\em n})}\label{guido_8h_a105}
+
+
+\index{guido.h@{guido.h}!gd_init@{gd\_\-init}}
+\index{gd_init@{gd\_\-init}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-init (void)}\label{guido_8h_a64}
+
+
+\index{guido.h@{guido.h}!gd_noteAbsDur@{gd\_\-noteAbsDur}}
+\index{gd_noteAbsDur@{gd\_\-noteAbsDur}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Abs\-Dur (long int {\em n})}\label{guido_8h_a82}
+
+
+\index{guido.h@{guido.h}!gd_noteAcc@{gd\_\-noteAcc}}
+\index{gd_noteAcc@{gd\_\-noteAcc}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Acc (int {\em n})}\label{guido_8h_a76}
+
+
+\index{guido.h@{guido.h}!gd_noteDdot@{gd\_\-noteDdot}}
+\index{gd_noteDdot@{gd\_\-noteDdot}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Ddot (void)}\label{guido_8h_a81}
+
+
+\index{guido.h@{guido.h}!gd_noteDenom@{gd\_\-noteDenom}}
+\index{gd_noteDenom@{gd\_\-noteDenom}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Denom (long int {\em n})}\label{guido_8h_a79}
+
+
+\index{guido.h@{guido.h}!gd_noteDot@{gd\_\-noteDot}}
+\index{gd_noteDot@{gd\_\-noteDot}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Dot (void)}\label{guido_8h_a80}
+
+
+\index{guido.h@{guido.h}!gd_noteEnum@{gd\_\-noteEnum}}
+\index{gd_noteEnum@{gd\_\-noteEnum}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Enum (long int {\em n})}\label{guido_8h_a78}
+
+
+\index{guido.h@{guido.h}!gd_noteInit@{gd\_\-noteInit}}
+\index{gd_noteInit@{gd\_\-noteInit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Init (char $\ast$ {\em id})}\label{guido_8h_a75}
+
+
+\index{guido.h@{guido.h}!gd_noteName2pc@{gd\_\-noteName2pc}}
+\index{gd_noteName2pc@{gd\_\-noteName2pc}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int gd\_\-note\-Name2pc (char $\ast$ {\em name})}\label{guido_8h_a74}
+
+
+\index{guido.h@{guido.h}!gd_noteOct@{gd\_\-noteOct}}
+\index{gd_noteOct@{gd\_\-noteOct}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-note\-Oct (int {\em n})}\label{guido_8h_a77}
+
+
+\index{guido.h@{guido.h}!gd_parse@{gd\_\-parse}}
+\index{gd_parse@{gd\_\-parse}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int gd\_\-parse (const char $\ast$ {\em filename}, int {\em mode})}\label{guido_8h_a67}
+
+
+check if \char`\"{}filename\char`\"{} is in unicode format
+
+get file size
+
+unicode handling \index{guido.h@{guido.h}!gd_segmAppendSeq@{gd\_\-segmAppendSeq}}
+\index{gd_segmAppendSeq@{gd\_\-segmAppendSeq}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-segm\-Append\-Seq (void)}\label{guido_8h_a92}
+
+
+\index{guido.h@{guido.h}!gd_segmExit@{gd\_\-segmExit}}
+\index{gd_segmExit@{gd\_\-segmExit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-segm\-Exit (void)}\label{guido_8h_a91}
+
+
+\index{guido.h@{guido.h}!gd_segmInit@{gd\_\-segmInit}}
+\index{gd_segmInit@{gd\_\-segmInit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-segm\-Init (void)}\label{guido_8h_a90}
+
+
+\index{guido.h@{guido.h}!gd_seqAppendChord@{gd\_\-seqAppendChord}}
+\index{gd_seqAppendChord@{gd\_\-seqAppendChord}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-seq\-Append\-Chord (void)}\label{guido_8h_a87}
+
+
+\index{guido.h@{guido.h}!gd_seqAppendNote@{gd\_\-seqAppendNote}}
+\index{gd_seqAppendNote@{gd\_\-seqAppendNote}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-seq\-Append\-Note (void)}\label{guido_8h_a83}
+
+
+\index{guido.h@{guido.h}!gd_seqExit@{gd\_\-seqExit}}
+\index{gd_seqExit@{gd\_\-seqExit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-seq\-Exit (void)}\label{guido_8h_a89}
+
+
+\index{guido.h@{guido.h}!gd_seqInit@{gd\_\-seqInit}}
+\index{gd_seqInit@{gd\_\-seqInit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-seq\-Init (void)}\label{guido_8h_a88}
+
+
+\index{guido.h@{guido.h}!gd_tagAdd@{gd\_\-tagAdd}}
+\index{gd_tagAdd@{gd\_\-tagAdd}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Add (void)}\label{guido_8h_a98}
+
+
+\index{guido.h@{guido.h}!gd_tagAddArg@{gd\_\-tagAddArg}}
+\index{gd_tagAddArg@{gd\_\-tagAddArg}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Add\-Arg (char $\ast$ {\em s})}\label{guido_8h_a99}
+
+
+\index{guido.h@{guido.h}!gd_tagArgUnit@{gd\_\-tagArgUnit}}
+\index{gd_tagArgUnit@{gd\_\-tagArgUnit}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Arg\-Unit (char $\ast$ {\em unit})}\label{guido_8h_a96}
+
+
+\index{guido.h@{guido.h}!gd_tagEnd@{gd\_\-tagEnd}}
+\index{gd_tagEnd@{gd\_\-tagEnd}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-End (void)}\label{guido_8h_a100}
+
+
+\index{guido.h@{guido.h}!gd_tagFloatArg@{gd\_\-tagFloatArg}}
+\index{gd_tagFloatArg@{gd\_\-tagFloatArg}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Float\-Arg (T\_\-REAL {\em r})}\label{guido_8h_a95}
+
+
+\index{guido.h@{guido.h}!gd_tagIntArg@{gd\_\-tagIntArg}}
+\index{gd_tagIntArg@{gd\_\-tagIntArg}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Int\-Arg (long int {\em n})}\label{guido_8h_a94}
+
+
+\index{guido.h@{guido.h}!gd_tagRange@{gd\_\-tagRange}}
+\index{gd_tagRange@{gd\_\-tagRange}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Range ()}\label{guido_8h_a107}
+
+
+\index{guido.h@{guido.h}!gd_tagStackClear@{gd\_\-tagStackClear}}
+\index{gd_tagStackClear@{gd\_\-tagStackClear}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Stack\-Clear (void)}\label{guido_8h_a72}
+
+
+\index{guido.h@{guido.h}!gd_tagStackPop@{gd\_\-tagStackPop}}
+\index{gd_tagStackPop@{gd\_\-tagStackPop}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int gd\_\-tag\-Stack\-Pop (void)}\label{guido_8h_a71}
+
+
+\index{guido.h@{guido.h}!gd_tagStackPush@{gd\_\-tagStackPush}}
+\index{gd_tagStackPush@{gd\_\-tagStackPush}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Stack\-Push (long int {\em tagno})}\label{guido_8h_a73}
+
+
+\index{guido.h@{guido.h}!gd_tagStart@{gd\_\-tagStart}}
+\index{gd_tagStart@{gd\_\-tagStart}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Start (char $\ast$ {\em id}, long int {\em no})}\label{guido_8h_a93}
+
+
+\index{guido.h@{guido.h}!gd_tagStrArg@{gd\_\-tagStrArg}}
+\index{gd_tagStrArg@{gd\_\-tagStrArg}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gd\_\-tag\-Str\-Arg (char $\ast$ {\em s})}\label{guido_8h_a97}
+
+
+
+
+\subsection{Variable Documentation}
+\index{guido.h@{guido.h}!cmnt_level@{cmnt\_\-level}}
+\index{cmnt_level@{cmnt\_\-level}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf cmnt\_\-level}}\label{guido_8h_a60}
+
+
+\index{guido.h@{guido.h}!cnr@{cnr}}
+\index{cnr@{cnr}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf cnr}}\label{guido_8h_a59}
+
+
+\index{guido.h@{guido.h}!lnr@{lnr}}
+\index{lnr@{lnr}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf lnr}}\label{guido_8h_a58}
+
+
+\index{guido.h@{guido.h}!parse_mode@{parse\_\-mode}}
+\index{parse_mode@{parse\_\-mode}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf parse\_\-mode}}\label{guido_8h_a57}
+
+
+\index{guido.h@{guido.h}!rtp_dn@{rtp\_\-dn}}
+\index{rtp_dn@{rtp\_\-dn}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf rtp\_\-dn}}\label{guido_8h_a63}
+
+
+\index{guido.h@{guido.h}!rtp_en@{rtp\_\-en}}
+\index{rtp_en@{rtp\_\-en}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf rtp\_\-en}}\label{guido_8h_a62}
+
+
+\index{guido.h@{guido.h}!tagno@{tagno}}
+\index{tagno@{tagno}!guido.h@{guido.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf tagno}}\label{guido_8h_a61}
+
+

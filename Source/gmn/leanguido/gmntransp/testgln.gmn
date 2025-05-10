@@ -1,0 +1,12 @@
+
+% ----------------------------------------
+[ 
+   % a c2 note with duration 500ms, starting at 10ms, id = 1
+
+   empty*10ms \noteOn:1<pitch="c2", vel=97> empty*500ms 
+    \noteOff:1<pitch="c2">  
+
+  \noteOn:2<pitch = "d3",vel = 80>  empty*1000ms 
+    \noteOff:2<pitch = "d3"> 
+]
+% ----------------------------------------

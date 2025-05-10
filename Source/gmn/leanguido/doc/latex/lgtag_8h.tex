@@ -1,0 +1,56 @@
+\section{lgtag.h File Reference}
+\label{lgtag_8h}\index{lgtag.h@{lgtag.h}}
+{\tt \#include $<$string$>$}\par
+{\tt \#include \char`\"{}lgtagarg.h\char`\"{}}\par
+{\tt \#include \char`\"{}lgevent.h\char`\"{}}\par
+{\tt \#include \char`\"{}lgvisitor.h\char`\"{}}\par
+{\tt \#include \char`\"{}lgfactory.h\char`\"{}}\par
+\subsection*{Compounds}
+\begin{CompactItemize}
+\item 
+class {\bf lg\-Tag}
+\begin{CompactList}\small\item\em GUIDO tag with name and a list of arguments given as {\bf lg\-Tag\-Arg}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf lg\-Tag\-Types} \{ \par
+{\bf no\-Range\-Type}, 
+{\bf range\-Type}, 
+{\bf end\-Bracket\-Type}, 
+{\bf begin\-Type}, 
+\par
+{\bf end\-Type}, 
+{\bf remark\-Begin}, 
+{\bf remark\-End}
+ \}
+\begin{CompactList}\small\item\em values returned by {\bf lg\-Tag::tag\-Type( void )} \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{lgtag.h@{lgtag.h}!lgTagTypes@{lgTagTypes}}
+\index{lgTagTypes@{lgTagTypes}!lgtag.h@{lgtag.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf lg\-Tag\-Types}}\label{lgtag_8h_a7}
+
+
+values returned by {\bf lg\-Tag::tag\-Type( void )} 
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{noRangeType@{noRangeType}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!noRangeType@{noRangeType}}\item[{\em 
+{\em no\-Range\-Type}\label{lgtag_8h_a7a0}
+}]a tag without a range \index{rangeType@{rangeType}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!rangeType@{rangeType}}\item[{\em 
+{\em range\-Type}\label{lgtag_8h_a7a1}
+}]a tag with a (...) range \index{endBracketType@{endBracketType}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!endBracketType@{endBracketType}}\item[{\em 
+{\em end\-Bracket\-Type}\label{lgtag_8h_a7a2}
+}]a \char`\"{})\char`\"{} tag \index{beginType@{beginType}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!beginType@{beginType}}\item[{\em 
+{\em begin\-Type}\label{lgtag_8h_a7a3}
+}]a  tag \index{endType@{endType}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!endType@{endType}}\item[{\em 
+{\em end\-Type}\label{lgtag_8h_a7a4}
+}]a  tag \index{remarkBegin@{remarkBegin}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!remarkBegin@{remarkBegin}}\item[{\em 
+{\em remark\-Begin}\label{lgtag_8h_a7a5}
+}]a ($\ast$ tag \index{remarkEnd@{remarkEnd}!lgtag.h@{lgtag.h}}\index{lgtag.h@{lgtag.h}!remarkEnd@{remarkEnd}}\item[{\em 
+{\em remark\-End}\label{lgtag_8h_a7a6}
+}]a $\ast$) tag \end{description}
+\end{Desc}
+

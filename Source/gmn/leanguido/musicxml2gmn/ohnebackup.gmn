@@ -1,0 +1,35 @@
+% Insert your music here
+% Parsed by MusicXML-to-GUIDO Parser 1.0 
+
+{[
+\title<"An die ferne Geliebte"> 
+\composer<"Ludwig van Beethoven"> 
+\clef<"g2"> 
+\meter<"4/4"> 
+\key<"C"> 
+\text<"abc"> 
+\stemsDown 
+g1*1/4 b1*1/4  
+\stacc( d2*1/4 ) _*1/4 
+\stemsUp e1*1/4 {
+e1*1/4 , 
+a1*1/4 }  b1*1/4 
+\stemsDown 
+\trill( g1*1/4 {
+g1*1/4 , 
+b1*1/4 , 
+d2*1/4 
+\bar<1> 
+\stemsUp }  ) 
+\slurBegin:2 
+\slurBegin:1 
+\beamBegin:1 
+\tieBegin:0 g0*1/4. 
+\grace( 
+e1*1/4 \tieEnd:0 ) d0*1/4 \beamEnd:1 \slurEnd:1 
+\beamsOff f#-1*1/4 \slurEnd:2 e2*1/8 
+\grace( c2*1/4 
+\bar<2> ) _*1/1 
+\bar<3> _*1/1 
+\bar<4> _*1/1 
+\bar<5> ]} 

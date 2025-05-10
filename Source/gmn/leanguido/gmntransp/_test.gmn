@@ -1,0 +1,13 @@
+%File transposed by gmntransp v1.0
+%written 2003 by Juergen Kilian as part of the GUIDO toolbox.
+%Please report problems to kilian@noteserver.org and
+%visit also the GUIDO noteserver: http://www.noteserver.org 
+
+{[
+\slur( 
+c#1*1/4 d1*1/4 d1*1/4 d1*1/4 ) 
+\cue( d#1*1/4 e1*1/4 e1*1/4 ) f&1*1/4 f1*1/4 f#1*1/4 
+g1*1/4 g&1*1/4 g#1*1/4 a1*1/4 a1*1/4 a1*1/4 a#2*1/4 b2*1/4 b2*1/4 c&3*1/4 
+c3*1/4 c2*1/4 ], 
+[
+a#0*1/4 c1*1/4 d#1*1/4 g4*1/4 a#1*1/4 c2*1/16 c#0*1/16 ]} 

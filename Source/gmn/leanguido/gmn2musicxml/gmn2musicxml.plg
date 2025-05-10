@@ -1,0 +1,464 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: gmn2musicxml - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A3.tmp" mit Inhalten
+[
+/nologo /ML /W3 /GR /GX /O2 /I "..\..\parser-kit" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/gmn2musicxml.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"N:\saldvl\source\leanguido\duration.cpp"
+"N:\saldvl\source\leanguido\GMN2MUSICXML\gmn2musicxml.cpp"
+"N:\saldvl\source\parser-kit\guido.cpp"
+"N:\saldvl\source\leanguido\lgchord.cpp"
+"N:\saldvl\source\leanguido\lgempty.cpp"
+"N:\saldvl\source\leanguido\lgevent.cpp"
+"N:\saldvl\source\leanguido\lgfactory.cpp"
+"N:\saldvl\source\leanguido\lgguido.cpp"
+"N:\saldvl\source\leanguido\lgnote.cpp"
+"N:\saldvl\source\leanguido\lgobject.cpp"
+"N:\saldvl\source\leanguido\lgrest.cpp"
+"N:\saldvl\source\leanguido\lgsegment.cpp"
+"N:\saldvl\source\leanguido\lgsequence.cpp"
+"N:\saldvl\source\leanguido\lgtag.cpp"
+"N:\saldvl\source\leanguido\lgtagarg.cpp"
+"N:\saldvl\source\leanguido\lgvisitor.cpp"
+"N:\saldvl\source\leanguido\lgvoice.cpp"
+"N:\saldvl\source\leanguido\GMN2MUSICXML\lgXMLfactory.cpp"
+"N:\saldvl\source\leanguido\GMN2MUSICXML\main.cpp"
+"N:\saldvl\source\parser-kit\strlist.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A3.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A4.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/gmn2musicxml.pdb" /machine:I386 /out:"Release/gmn2musicxml.exe" 
+.\Release\duration.obj
+.\Release\gmn2musicxml.obj
+.\Release\guido.obj
+.\Release\lgchord.obj
+.\Release\lgempty.obj
+.\Release\lgevent.obj
+.\Release\lgfactory.obj
+.\Release\lgguido.obj
+.\Release\lgnote.obj
+.\Release\lgobject.obj
+.\Release\lgrest.obj
+.\Release\lgsegment.obj
+.\Release\lgsequence.obj
+.\Release\lgtag.obj
+.\Release\lgtagarg.obj
+.\Release\lgVisitor.obj
+.\Release\lgvoice.obj
+.\Release\lgXMLfactory.obj
+.\Release\main.obj
+.\Release\strlist.obj
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A4.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+duration.cpp
+gmn2musicxml.cpp
+guido.cpp
+N:\saldvl\source\parser-kit\parser_t.c(1039) : warning C4102: 'yyerrlab1' : Unreferenzierte Marke
+N:\saldvl\source\parser-kit\parser_t.c(567) : warning C4102: 'yybackup' : Unreferenzierte Marke
+lgchord.cpp
+lgempty.cpp
+lgevent.cpp
+lgfactory.cpp
+lgguido.cpp
+lgnote.cpp
+lgobject.cpp
+lgrest.cpp
+lgsegment.cpp
+lgsequence.cpp
+lgtag.cpp
+lgtagarg.cpp
+lgvisitor.cpp
+lgvoice.cpp
+lgXMLfactory.cpp
+main.cpp
+strlist.c
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+gmn2musicxml.exe - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: gmn2musicxml - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+
+
+
+<h3>Ergebnisse</h3>
+gmn2musicxml.exe - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: gmntransp - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A6.tmp" mit Inhalten
+[
+/nologo /ML /W3 /GR /GX /O2 /I ".." /I "..\..\parser-kit" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/gmntransp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"N:\saldvl\source\leanguido\duration.cpp"
+"N:\saldvl\source\leanguido\gmntransp\gmntransp.cpp"
+"N:\saldvl\source\parser-kit\guido.cpp"
+"N:\saldvl\source\leanguido\lgchord.cpp"
+"N:\saldvl\source\leanguido\lgempty.cpp"
+"N:\saldvl\source\leanguido\lgevent.cpp"
+"N:\saldvl\source\leanguido\lgfactory.cpp"
+"N:\saldvl\source\leanguido\lgguido.cpp"
+"N:\saldvl\source\leanguido\lgnote.cpp"
+"N:\saldvl\source\leanguido\lgobject.cpp"
+"N:\saldvl\source\leanguido\lgrest.cpp"
+"N:\saldvl\source\leanguido\lgsegment.cpp"
+"N:\saldvl\source\leanguido\lgsequence.cpp"
+"N:\saldvl\source\leanguido\lgtag.cpp"
+"N:\saldvl\source\leanguido\lgtagarg.cpp"
+"N:\saldvl\source\leanguido\lgvisitor.cpp"
+"N:\saldvl\source\leanguido\lgvoice.cpp"
+"N:\saldvl\source\leanguido\gmntransp\main.cpp"
+"N:\saldvl\source\leanguido\gmntransp\mylgfactory.cpp"
+"N:\saldvl\source\parser-kit\strlist.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A6.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A7.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/gmntransp.pdb" /machine:I386 /out:"Release/gmntransp.exe" 
+.\Release\duration.obj
+.\Release\gmntools.obj
+.\Release\gmntransp.obj
+.\Release\guido.obj
+.\Release\lgchord.obj
+.\Release\lgempty.obj
+.\Release\lgevent.obj
+.\Release\lgfactory.obj
+.\Release\lgguido.obj
+.\Release\lgnote.obj
+.\Release\lgobject.obj
+.\Release\lgrest.obj
+.\Release\lgsegment.obj
+.\Release\lgsequence.obj
+.\Release\lgtag.obj
+.\Release\lgtagarg.obj
+.\Release\lgVisitor.obj
+.\Release\lgvoice.obj
+.\Release\main.obj
+.\Release\mylgfactory.obj
+.\Release\strlist.obj
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A7.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+duration.cpp
+gmntransp.cpp
+guido.cpp
+N:\saldvl\source\parser-kit\parser_t.c(1039) : warning C4102: 'yyerrlab1' : Unreferenzierte Marke
+N:\saldvl\source\parser-kit\parser_t.c(567) : warning C4102: 'yybackup' : Unreferenzierte Marke
+lgchord.cpp
+lgempty.cpp
+lgevent.cpp
+lgfactory.cpp
+lgguido.cpp
+lgnote.cpp
+lgobject.cpp
+lgrest.cpp
+lgsegment.cpp
+lgsequence.cpp
+lgtag.cpp
+lgtagarg.cpp
+lgvisitor.cpp
+lgvoice.cpp
+main.cpp
+mylgfactory.cpp
+strlist.c
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+gmntransp.exe - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: gmntransp - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+
+
+
+<h3>Ergebnisse</h3>
+gmntransp.exe - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: leanguido - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A9.tmp" mit Inhalten
+[
+/nologo /ML /W3 /GR /GX /O2 /I "..\parser-kit" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/leanguido.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"N:\saldvl\source\leanguido\duration.cpp"
+"N:\saldvl\source\parser-kit\guido.cpp"
+"N:\saldvl\source\leanguido\lgchord.cpp"
+"N:\saldvl\source\leanguido\lgempty.cpp"
+"N:\saldvl\source\leanguido\lgevent.cpp"
+"N:\saldvl\source\leanguido\lgfactory.cpp"
+"N:\saldvl\source\leanguido\lgguido.cpp"
+"N:\saldvl\source\leanguido\lgmain.cpp"
+"N:\saldvl\source\leanguido\lgnote.cpp"
+"N:\saldvl\source\leanguido\lgobject.cpp"
+"N:\saldvl\source\leanguido\lgrest.cpp"
+"N:\saldvl\source\leanguido\lgsegment.cpp"
+"N:\saldvl\source\leanguido\lgsequence.cpp"
+"N:\saldvl\source\leanguido\lgtag.cpp"
+"N:\saldvl\source\leanguido\lgtagarg.cpp"
+"N:\saldvl\source\leanguido\lgvisitor.cpp"
+"N:\saldvl\source\leanguido\lgvoice.cpp"
+"N:\saldvl\source\parser-kit\strlist.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5A9.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AA.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/leanguido.pdb" /machine:I386 /out:"Release/leanguido.exe" 
+.\Release\duration.obj
+.\Release\gmntools.obj
+.\Release\guido.obj
+.\Release\lgchord.obj
+.\Release\lgempty.obj
+.\Release\lgevent.obj
+.\Release\lgfactory.obj
+.\Release\lgguido.obj
+.\Release\lgmain.obj
+.\Release\lgnote.obj
+.\Release\lgobject.obj
+.\Release\lgrest.obj
+.\Release\lgsegment.obj
+.\Release\lgsequence.obj
+.\Release\lgtag.obj
+.\Release\lgtagarg.obj
+.\Release\lgVisitor.obj
+.\Release\lgvoice.obj
+.\Release\strlist.obj
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AA.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+duration.cpp
+guido.cpp
+N:\saldvl\source\parser-kit\parser_t.c(1039) : warning C4102: 'yyerrlab1' : Unreferenzierte Marke
+N:\saldvl\source\parser-kit\parser_t.c(567) : warning C4102: 'yybackup' : Unreferenzierte Marke
+lgchord.cpp
+lgempty.cpp
+lgevent.cpp
+lgfactory.cpp
+lgguido.cpp
+lgmain.cpp
+lgnote.cpp
+lgobject.cpp
+lgrest.cpp
+lgsegment.cpp
+lgsequence.cpp
+lgtag.cpp
+lgtagarg.cpp
+lgvisitor.cpp
+lgvoice.cpp
+strlist.c
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+leanguido.exe - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: leanguido - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+
+
+
+<h3>Ergebnisse</h3>
+leanguido.exe - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: musicxml2gmn - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AC.tmp" mit Inhalten
+[
+/nologo /ML /W3 /GR /GX /O2 /I "..\..\parser-kit" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/musicxml2gmn.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"N:\saldvl\source\leanguido\duration.cpp"
+"N:\saldvl\source\parser-kit\guido.cpp"
+"N:\saldvl\source\leanguido\lgchord.cpp"
+"N:\saldvl\source\leanguido\lgempty.cpp"
+"N:\saldvl\source\leanguido\lgevent.cpp"
+"N:\saldvl\source\leanguido\lgfactory.cpp"
+"N:\saldvl\source\leanguido\lgguido.cpp"
+"N:\saldvl\source\leanguido\lgnote.cpp"
+"N:\saldvl\source\leanguido\lgobject.cpp"
+"N:\saldvl\source\leanguido\lgrest.cpp"
+"N:\saldvl\source\leanguido\lgsegment.cpp"
+"N:\saldvl\source\leanguido\lgsequence.cpp"
+"N:\saldvl\source\leanguido\lgtag.cpp"
+"N:\saldvl\source\leanguido\lgtagarg.cpp"
+"N:\saldvl\source\leanguido\lgvisitor.cpp"
+"N:\saldvl\source\leanguido\lgvoice.cpp"
+"N:\saldvl\source\leanguido\musicxml2gmn\musicxml2gmn.cpp"
+"N:\saldvl\source\parser-kit\strlist.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AC.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AD.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/musicxml2gmn.pdb" /machine:I386 /out:"Release/musicxml2gmn.exe" 
+.\Release\duration.obj
+.\Release\guido.obj
+.\Release\lgchord.obj
+.\Release\lgempty.obj
+.\Release\lgevent.obj
+.\Release\lgfactory.obj
+.\Release\lgguido.obj
+.\Release\lgnote.obj
+.\Release\lgobject.obj
+.\Release\lgrest.obj
+.\Release\lgsegment.obj
+.\Release\lgsequence.obj
+.\Release\lgtag.obj
+.\Release\lgtagarg.obj
+.\Release\lgVisitor.obj
+.\Release\lgvoice.obj
+.\Release\musicxml2gmn.obj
+.\Release\strlist.obj
+..\..\guidoxml\xml2guido\EXPAT_WIN32BIN_1_95_1\LIB\xmlparse.lib
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AD.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+duration.cpp
+guido.cpp
+N:\saldvl\source\parser-kit\parser_t.c(1039) : warning C4102: 'yyerrlab1' : Unreferenzierte Marke
+N:\saldvl\source\parser-kit\parser_t.c(567) : warning C4102: 'yybackup' : Unreferenzierte Marke
+lgchord.cpp
+lgempty.cpp
+lgevent.cpp
+lgfactory.cpp
+lgguido.cpp
+lgnote.cpp
+lgobject.cpp
+lgrest.cpp
+lgsegment.cpp
+lgsequence.cpp
+lgtag.cpp
+lgtagarg.cpp
+lgvisitor.cpp
+lgvoice.cpp
+musicxml2gmn.cpp
+strlist.c
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+musicxml2gmn.exe - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: musicxml2gmn - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+
+
+
+<h3>Ergebnisse</h3>
+musicxml2gmn.exe - 0 Fehler, 0 Warnung(en)
+<h3>
+--------------------Konfiguration: striptags - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AF.tmp" mit Inhalten
+[
+/nologo /ML /W3 /GR /GX /O2 /I "..\..\parser-kit" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/striptags.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"N:\saldvl\source\leanguido\duration.cpp"
+"N:\saldvl\source\parser-kit\guido.cpp"
+"N:\saldvl\source\leanguido\lgchord.cpp"
+"N:\saldvl\source\leanguido\lgempty.cpp"
+"N:\saldvl\source\leanguido\lgevent.cpp"
+"N:\saldvl\source\leanguido\lgfactory.cpp"
+"N:\saldvl\source\leanguido\lgguido.cpp"
+"N:\saldvl\source\leanguido\lgnote.cpp"
+"N:\saldvl\source\leanguido\lgobject.cpp"
+"N:\saldvl\source\leanguido\lgrest.cpp"
+"N:\saldvl\source\leanguido\lgsegment.cpp"
+"N:\saldvl\source\leanguido\lgsequence.cpp"
+"N:\saldvl\source\leanguido\lgtag.cpp"
+"N:\saldvl\source\leanguido\lgtagarg.cpp"
+"N:\saldvl\source\leanguido\lgvisitor.cpp"
+"N:\saldvl\source\leanguido\lgvoice.cpp"
+"N:\saldvl\source\leanguido\striptags\main.cpp"
+"N:\saldvl\source\leanguido\striptags\mylgfactory.cpp"
+"N:\saldvl\source\leanguido\striptags\striptags.cpp"
+"N:\saldvl\source\parser-kit\strlist.c"
+]
+Creating command line "cl.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5AF.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5B0.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/striptags.pdb" /machine:I386 /out:"Release/striptags.exe" 
+.\Release\duration.obj
+.\Release\gmntools.obj
+.\Release\guido.obj
+.\Release\lgchord.obj
+.\Release\lgempty.obj
+.\Release\lgevent.obj
+.\Release\lgfactory.obj
+.\Release\lgguido.obj
+.\Release\lgnote.obj
+.\Release\lgobject.obj
+.\Release\lgrest.obj
+.\Release\lgsegment.obj
+.\Release\lgsequence.obj
+.\Release\lgtag.obj
+.\Release\lgtagarg.obj
+.\Release\lgvisitor.obj
+.\Release\lgvoice.obj
+.\Release\main.obj
+.\Release\mylgfactory.obj
+.\Release\striptags.obj
+.\Release\strlist.obj
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\kilian\LOKALE~1\Temp\RSP5B0.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+duration.cpp
+guido.cpp
+N:\saldvl\source\parser-kit\parser_t.c(1039) : warning C4102: 'yyerrlab1' : Unreferenzierte Marke
+N:\saldvl\source\parser-kit\parser_t.c(567) : warning C4102: 'yybackup' : Unreferenzierte Marke
+lgchord.cpp
+lgempty.cpp
+lgevent.cpp
+lgfactory.cpp
+lgguido.cpp
+lgnote.cpp
+lgobject.cpp
+lgrest.cpp
+lgsegment.cpp
+lgsequence.cpp
+lgtag.cpp
+lgtagarg.cpp
+lgvisitor.cpp
+lgvoice.cpp
+main.cpp
+mylgfactory.cpp
+striptags.cpp
+strlist.c
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+striptags.exe - 0 Fehler, 2 Warnung(en)
+<h3>
+--------------------Konfiguration: striptags - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+
+
+
+<h3>Ergebnisse</h3>
+striptags.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

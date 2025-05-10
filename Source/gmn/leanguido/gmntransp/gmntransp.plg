@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: gmntransp - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "c:\temp\RSP42.tmp" mit Inhalten
+[
+/nologo /ML /W3 /GR /GX /O2 /I ".." /I "..\..\parser-kit" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/gmntransp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"N:\saldvl\source\leanguido\duration.cpp"
+"N:\saldvl\source\leanguido\gmntransp\gmntransp.cpp"
+"N:\saldvl\source\leanguido\lgchord.cpp"
+"N:\saldvl\source\leanguido\lgempty.cpp"
+"N:\saldvl\source\leanguido\lgevent.cpp"
+"N:\saldvl\source\leanguido\lgfactory.cpp"
+"N:\saldvl\source\leanguido\lgguido.cpp"
+"N:\saldvl\source\leanguido\lgnote.cpp"
+"N:\saldvl\source\leanguido\lgobject.cpp"
+"N:\saldvl\source\leanguido\lgrest.cpp"
+"N:\saldvl\source\leanguido\lgsegment.cpp"
+"N:\saldvl\source\leanguido\lgsequence.cpp"
+"N:\saldvl\source\leanguido\lgtag.cpp"
+"N:\saldvl\source\leanguido\lgtagarg.cpp"
+"N:\saldvl\source\leanguido\lgvoice.cpp"
+"N:\saldvl\source\leanguido\gmntransp\main.cpp"
+"N:\saldvl\source\leanguido\gmntransp\mylgfactory.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP42.tmp" 
+Erstellen der temporären Datei  "c:\temp\RSP43.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/gmntransp.pdb" /machine:I386 /out:"Release/gmntransp.exe" 
+.\Release\duration.obj
+.\Release\gmntools.obj
+.\Release\gmntransp.obj
+.\Release\guido.obj
+.\Release\lgchord.obj
+.\Release\lgempty.obj
+.\Release\lgevent.obj
+.\Release\lgfactory.obj
+.\Release\lgguido.obj
+.\Release\lgnote.obj
+.\Release\lgobject.obj
+.\Release\lgrest.obj
+.\Release\lgsegment.obj
+.\Release\lgsequence.obj
+.\Release\lgtag.obj
+.\Release\lgtagarg.obj
+.\Release\lgVisitor.obj
+.\Release\lgvoice.obj
+.\Release\main.obj
+.\Release\mylgfactory.obj
+.\Release\strlist.obj
+]
+Erstellen der Befehlzeile "link.exe @c:\temp\RSP43.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+duration.cpp
+gmntransp.cpp
+lgchord.cpp
+lgempty.cpp
+lgevent.cpp
+lgfactory.cpp
+lgguido.cpp
+lgnote.cpp
+lgobject.cpp
+lgrest.cpp
+lgsegment.cpp
+lgsequence.cpp
+lgtag.cpp
+lgtagarg.cpp
+lgvoice.cpp
+main.cpp
+mylgfactory.cpp
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+gmntransp.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

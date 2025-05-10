@@ -1,0 +1,213 @@
+\section{lg\-Duration Class Reference}
+\label{classlgDuration}\index{lgDuration@{lgDuration}}
+generic fraction class. lg\-Duration is used to store the information pertaining to the duration/attacktime of a note.  
+
+
+{\tt \#include $<$duration.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf lg\-Duration} (long int num=0, long int denom=1)
+\item 
+{\bf lg\-Duration} (const {\bf lg\-Duration} \&d)
+\item 
+{\bf lg\-Duration} (const string \&str)
+\item 
+{\bf lg\-Duration} {\bf operator+} (const {\bf lg\-Duration} \&dur)
+\item 
+{\bf lg\-Duration} {\bf operator-} (const {\bf lg\-Duration} \&dur)
+\item 
+{\bf lg\-Duration} {\bf operator $\ast$} (const {\bf lg\-Duration} \&dur)
+\begin{CompactList}\small\item\em Useful for notes with dots. \item\end{CompactList}\item 
+{\bf lg\-Duration} {\bf operator/} (const {\bf lg\-Duration} \&dur)
+\item 
+{\bf lg\-Duration} \& {\bf operator+=} (const {\bf lg\-Duration} \&dur)
+\item 
+{\bf lg\-Duration} \& {\bf operator-=} (const {\bf lg\-Duration} \&dur)
+\item 
+{\bf lg\-Duration} \& {\bf operator $\ast$=} (const {\bf lg\-Duration} \&dur)
+\begin{CompactList}\small\item\em Useful for notes with dots. \item\end{CompactList}\item 
+{\bf lg\-Duration} \& {\bf operator/=} (const {\bf lg\-Duration} \&dur)
+\item 
+bool {\bf operator$>$} (const {\bf lg\-Duration} \&dur)
+\item 
+bool {\bf operator$>$=} (const {\bf lg\-Duration} \&dur)
+\item 
+bool {\bf operator$<$} (const {\bf lg\-Duration} \&dur)
+\item 
+bool {\bf operator$<$=} (const {\bf lg\-Duration} \&dur)
+\item 
+bool {\bf operator==} (const {\bf lg\-Duration} \&dur)
+\item 
+bool {\bf operator!=} (const {\bf lg\-Duration} \&dur)
+\item 
+void {\bf rationalise} (void)
+\begin{CompactList}\small\item\em Used to \char`\"{}rationalise\char`\"{} duration. \item\end{CompactList}\item 
+long int {\bf gcd} (long int a, long int b)
+\begin{CompactList}\small\item\em Used by {\bf rationalise()}. greatest common divisor. \item\end{CompactList}\item 
+virtual string {\bf to\-String} (void)
+\item 
+void {\bf write} (FILE $\ast$out)
+\item 
+double {\bf to\-Double} (void)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+long int {\bf dur\-N}
+\begin{CompactList}\small\item\em numerator \item\end{CompactList}\item 
+long int {\bf dur\-D}
+\begin{CompactList}\small\item\em denominator \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+generic fraction class. lg\-Duration is used to store the information pertaining to the duration/attacktime of a note. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{lgDuration@{lg\-Duration}!lgDuration@{lgDuration}}
+\index{lgDuration@{lgDuration}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}lg\-Duration::lg\-Duration (long int {\em num} = 0, long int {\em denom} = 1)}\label{classlgDuration_a0}
+
+
+\index{lgDuration@{lg\-Duration}!lgDuration@{lgDuration}}
+\index{lgDuration@{lgDuration}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}lg\-Duration::lg\-Duration (const {\bf lg\-Duration} \& {\em d})}\label{classlgDuration_a1}
+
+
+\index{lgDuration@{lg\-Duration}!lgDuration@{lgDuration}}
+\index{lgDuration@{lgDuration}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}lg\-Duration::lg\-Duration (const string \& {\em str})}\label{classlgDuration_a2}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{lgDuration@{lg\-Duration}!gcd@{gcd}}
+\index{gcd@{gcd}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int lg\-Duration::gcd (long int {\em a}, long int {\em b})}\label{classlgDuration_a18}
+
+
+Used by {\bf rationalise()}. greatest common divisor. 
+
+\index{lgDuration@{lg\-Duration}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} lg\-Duration::operator $\ast$ (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a5}
+
+
+Useful for notes with dots. 
+
+\index{lgDuration@{lg\-Duration}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} \& lg\-Duration::operator $\ast$= (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a9}
+
+
+Useful for notes with dots. 
+
+\index{lgDuration@{lg\-Duration}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool lg\-Duration::operator!= (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a16}
+
+
+\index{lgDuration@{lg\-Duration}!operator+@{operator+}}
+\index{operator+@{operator+}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} lg\-Duration::operator+ (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a3}
+
+
+\index{lgDuration@{lg\-Duration}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} \& lg\-Duration::operator+= (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a7}
+
+
+\index{lgDuration@{lg\-Duration}!operator-@{operator-}}
+\index{operator-@{operator-}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} lg\-Duration::operator- (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a4}
+
+
+\index{lgDuration@{lg\-Duration}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} \& lg\-Duration::operator-= (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a8}
+
+
+\index{lgDuration@{lg\-Duration}!operator/@{operator/}}
+\index{operator/@{operator/}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} lg\-Duration::operator/ (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a6}
+
+
+\index{lgDuration@{lg\-Duration}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Duration} \& lg\-Duration::operator/= (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a10}
+
+
+\index{lgDuration@{lg\-Duration}!operator<@{operator$<$}}
+\index{operator<@{operator$<$}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool lg\-Duration::operator$<$ (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a13}
+
+
+\index{lgDuration@{lg\-Duration}!operator<=@{operator$<$=}}
+\index{operator<=@{operator$<$=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool lg\-Duration::operator$<$= (const {\bf lg\-Duration} \& {\em dur})\hspace{0.3cm}{\tt  [inline]}}\label{classlgDuration_a14}
+
+
+\index{lgDuration@{lg\-Duration}!operator==@{operator==}}
+\index{operator==@{operator==}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool lg\-Duration::operator== (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a15}
+
+
+\index{lgDuration@{lg\-Duration}!operator>@{operator$>$}}
+\index{operator>@{operator$>$}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool lg\-Duration::operator$>$ (const {\bf lg\-Duration} \& {\em dur})}\label{classlgDuration_a11}
+
+
+\index{lgDuration@{lg\-Duration}!operator>=@{operator$>$=}}
+\index{operator>=@{operator$>$=}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool lg\-Duration::operator$>$= (const {\bf lg\-Duration} \& {\em dur})\hspace{0.3cm}{\tt  [inline]}}\label{classlgDuration_a12}
+
+
+\index{lgDuration@{lg\-Duration}!rationalise@{rationalise}}
+\index{rationalise@{rationalise}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void lg\-Duration::rationalise (void)}\label{classlgDuration_a17}
+
+
+Used to \char`\"{}rationalise\char`\"{} duration. 
+
+\index{lgDuration@{lg\-Duration}!toDouble@{toDouble}}
+\index{toDouble@{toDouble}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double lg\-Duration::to\-Double (void)}\label{classlgDuration_a21}
+
+
+\index{lgDuration@{lg\-Duration}!toString@{toString}}
+\index{toString@{toString}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string lg\-Duration::to\-String (void)\hspace{0.3cm}{\tt  [virtual]}}\label{classlgDuration_a19}
+
+
+\index{lgDuration@{lg\-Duration}!write@{write}}
+\index{write@{write}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void lg\-Duration::write (FILE $\ast$ {\em out})}\label{classlgDuration_a20}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{lgDuration@{lg\-Duration}!durD@{durD}}
+\index{durD@{durD}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf lg\-Duration::dur\-D}}\label{classlgDuration_o1}
+
+
+denominator 
+
+\index{lgDuration@{lg\-Duration}!durN@{durN}}
+\index{durN@{durN}!lgDuration@{lg\-Duration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int {\bf lg\-Duration::dur\-N}}\label{classlgDuration_o0}
+
+
+numerator 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf duration.h}\item 
+{\bf duration.cpp}\end{CompactItemize}

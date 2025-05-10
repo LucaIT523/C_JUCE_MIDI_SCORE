@@ -1,0 +1,195 @@
+\section{lgguido.cpp File Reference}
+\label{lgguido_8cpp}\index{lgguido.cpp@{lgguido.cpp}}
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include \char`\"{}naguido.h\char`\"{}}\par
+{\tt \#include \char`\"{}lgsegment.h\char`\"{}}\par
+{\tt \#include \char`\"{}lgchord.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf na\_\-parse\-GMNFile\-Mode} (const char $\ast$filename, int mode)
+\item 
+int {\bf na\_\-parse\-GMNFile} (const char $\ast$filename)
+\item 
+char {\bf na\_\-get\-Tag\-Arg\-Type} (int n)
+\item 
+char $\ast$ {\bf na\_\-get\-Tag\-Arg\-Name} (int n)
+\item 
+long int {\bf na\_\-get\-Tag\-Arg\-Int} (int n)
+\item 
+T\_\-REAL {\bf na\_\-get\-Tag\-Arg\-Float} (int n)
+\item 
+char $\ast$ {\bf na\_\-get\-Tag\-Arg\-Unit} (int n)
+\item 
+char $\ast$ {\bf na\_\-get\-Tag\-Arg\-Str} (int n)
+\item 
+void {\bf na\_\-segm\-Init} ()
+\item 
+void {\bf na\_\-segm\-Exit} ()
+\item 
+void {\bf na\_\-seq\-Init} ()
+\item 
+void {\bf na\_\-seq\-Exit} ()
+\item 
+void {\bf na\_\-seq\-Append\-Note} (int pc, int oct, int acc, long int dur\-N, long int dur\-D, int dots, long int dur\-Pos\-N, long int dur\-Pos\-D)
+\item 
+void {\bf na\_\-chord\-Init\-Voice} (void)
+\item 
+void {\bf na\_\-chord\-Init} (long int dur\-Pos\-N, long int dur\-Pos\-D)
+\item 
+void {\bf na\_\-seq\-Append\-Chord} (int voices, long int dur\-N, long int dur\-D, int dots, long int dur\-Pos\-N, long int dur\-Pos\-D)
+\item 
+void {\bf na\_\-tag\-Start} (char $\ast$s, long int no, long int {\bf tagno}, long int dur\-Pos\-N, long int dur\-Pos\-D)
+\item 
+void {\bf na\_\-tag\-End} (long int {\bf tagno}, long int dur\-Pos\-N, long int dur\-Pos\-D, long int before\-Dur\-Pos\-N, long int before\-Dur\-Pos\-D)
+\item 
+void {\bf na\_\-tag\-Int\-Arg} (long int n)
+\item 
+void {\bf na\_\-tag\-Float\-Arg} (T\_\-REAL r)
+\item 
+void {\bf na\_\-tag\-Str\-Arg} (char $\ast$s)
+\item 
+void {\bf na\_\-tag\-Add} (long int {\bf tagno}, int nargs)
+\item 
+int {\bf na\_\-parse\-Error} (long int {\bf lnr}, long int {\bf cnr}, const char $\ast$msg)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+{\bf lg\-Segment} $\ast$ {\bf cur\-Segment}
+\item 
+{\bf lg\-Tag} $\ast$ {\bf cur\-Tag}
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{lgguido.cpp@{lgguido.cpp}!na_chordInit@{na\_\-chordInit}}
+\index{na_chordInit@{na\_\-chordInit}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-chord\-Init (long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})}\label{lgguido_8cpp_a16}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_chordInitVoice@{na\_\-chordInitVoice}}
+\index{na_chordInitVoice@{na\_\-chordInitVoice}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-chord\-Init\-Voice (void)}\label{lgguido_8cpp_a15}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_getTagArgFloat@{na\_\-getTagArgFloat}}
+\index{na_getTagArgFloat@{na\_\-getTagArgFloat}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}T\_\-REAL na\_\-get\-Tag\-Arg\-Float (int {\em n})}\label{lgguido_8cpp_a7}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_getTagArgInt@{na\_\-getTagArgInt}}
+\index{na_getTagArgInt@{na\_\-getTagArgInt}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long int na\_\-get\-Tag\-Arg\-Int (int {\em n})}\label{lgguido_8cpp_a6}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_getTagArgName@{na\_\-getTagArgName}}
+\index{na_getTagArgName@{na\_\-getTagArgName}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ na\_\-get\-Tag\-Arg\-Name (int {\em n})}\label{lgguido_8cpp_a5}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_getTagArgStr@{na\_\-getTagArgStr}}
+\index{na_getTagArgStr@{na\_\-getTagArgStr}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ na\_\-get\-Tag\-Arg\-Str (int {\em n})}\label{lgguido_8cpp_a9}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_getTagArgType@{na\_\-getTagArgType}}
+\index{na_getTagArgType@{na\_\-getTagArgType}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char na\_\-get\-Tag\-Arg\-Type (int {\em n})}\label{lgguido_8cpp_a4}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_getTagArgUnit@{na\_\-getTagArgUnit}}
+\index{na_getTagArgUnit@{na\_\-getTagArgUnit}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ na\_\-get\-Tag\-Arg\-Unit (int {\em n})}\label{lgguido_8cpp_a8}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_parseError@{na\_\-parseError}}
+\index{na_parseError@{na\_\-parseError}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int na\_\-parse\-Error (long int {\em lnr}, long int {\em cnr}, const char $\ast$ {\em msg})}\label{lgguido_8cpp_a24}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_parseGMNFile@{na\_\-parseGMNFile}}
+\index{na_parseGMNFile@{na\_\-parseGMNFile}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int na\_\-parse\-GMNFile (const char $\ast$ {\em filename})}\label{lgguido_8cpp_a3}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_parseGMNFileMode@{na\_\-parseGMNFileMode}}
+\index{na_parseGMNFileMode@{na\_\-parseGMNFileMode}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int na\_\-parse\-GMNFile\-Mode (const char $\ast$ {\em filename}, int {\em mode})}\label{lgguido_8cpp_a2}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_segmExit@{na\_\-segmExit}}
+\index{na_segmExit@{na\_\-segmExit}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-segm\-Exit (void)}\label{lgguido_8cpp_a11}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_segmInit@{na\_\-segmInit}}
+\index{na_segmInit@{na\_\-segmInit}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-segm\-Init (void)}\label{lgguido_8cpp_a10}
+
+
+std call \index{lgguido.cpp@{lgguido.cpp}!na_seqAppendChord@{na\_\-seqAppendChord}}
+\index{na_seqAppendChord@{na\_\-seqAppendChord}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-seq\-Append\-Chord (int {\em voices}, long int {\em dur\-N}, long int {\em dur\-D}, int {\em dots}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})}\label{lgguido_8cpp_a17}
+
+
+close the current chord \index{lgguido.cpp@{lgguido.cpp}!na_seqAppendNote@{na\_\-seqAppendNote}}
+\index{na_seqAppendNote@{na\_\-seqAppendNote}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-seq\-Append\-Note (int {\em pc}, int {\em oct}, int {\em acc}, long int {\em dur\-N}, long int {\em dur\-D}, int {\em dots}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})}\label{lgguido_8cpp_a14}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_seqExit@{na\_\-seqExit}}
+\index{na_seqExit@{na\_\-seqExit}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-seq\-Exit (void)}\label{lgguido_8cpp_a13}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_seqInit@{na\_\-seqInit}}
+\index{na_seqInit@{na\_\-seqInit}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-seq\-Init (void)}\label{lgguido_8cpp_a12}
+
+
+if no current segment, create one
+
+create an empty seq \index{lgguido.cpp@{lgguido.cpp}!na_tagAdd@{na\_\-tagAdd}}
+\index{na_tagAdd@{na\_\-tagAdd}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-tag\-Add (long int {\em tagno}, int {\em nargs})}\label{lgguido_8cpp_a23}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_tagEnd@{na\_\-tagEnd}}
+\index{na_tagEnd@{na\_\-tagEnd}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-tag\-End (long int {\em tagno}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D}, long int {\em before\-Dur\-Pos\-N}, long int {\em before\-Dur\-Pos\-D})}\label{lgguido_8cpp_a19}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_tagFloatArg@{na\_\-tagFloatArg}}
+\index{na_tagFloatArg@{na\_\-tagFloatArg}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-tag\-Float\-Arg (T\_\-REAL {\em r})}\label{lgguido_8cpp_a21}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_tagIntArg@{na\_\-tagIntArg}}
+\index{na_tagIntArg@{na\_\-tagIntArg}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-tag\-Int\-Arg (long int {\em n})}\label{lgguido_8cpp_a20}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_tagStart@{na\_\-tagStart}}
+\index{na_tagStart@{na\_\-tagStart}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-tag\-Start (char $\ast$ {\em s}, long int {\em no}, long int {\em tagno}, long int {\em dur\-Pos\-N}, long int {\em dur\-Pos\-D})}\label{lgguido_8cpp_a18}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!na_tagStrArg@{na\_\-tagStrArg}}
+\index{na_tagStrArg@{na\_\-tagStrArg}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void na\_\-tag\-Str\-Arg (char $\ast$ {\em s})}\label{lgguido_8cpp_a22}
+
+
+
+
+\subsection{Variable Documentation}
+\index{lgguido.cpp@{lgguido.cpp}!curSegment@{curSegment}}
+\index{curSegment@{curSegment}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Segment}$\ast$ {\bf cur\-Segment}}\label{lgguido_8cpp_a0}
+
+
+\index{lgguido.cpp@{lgguido.cpp}!curTag@{curTag}}
+\index{curTag@{curTag}!lgguido.cpp@{lgguido.cpp}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf lg\-Tag}$\ast$ {\bf cur\-Tag}}\label{lgguido_8cpp_a1}
+
+
